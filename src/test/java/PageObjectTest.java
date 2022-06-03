@@ -16,7 +16,7 @@ class PageObjectTest {
 
     @BeforeAll
     public static void setup() {
-        System.setProperty("webdriver.chrome.driver", "C:/Program Files/Common Files/Oracle/Java/javapath/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Никита\\Desktop\\TestForSimbirsoft\\src\\driver\\chromedriver.exe");
         driver = new ChromeDriver();
         Configuration.browser = "chrome";
         Configuration.holdBrowserOpen = false;
@@ -25,11 +25,6 @@ class PageObjectTest {
 
     @AfterAll
     public static void teardown() {
-        try {
-            Thread.sleep(6_000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         driver.quit();
     }
 
