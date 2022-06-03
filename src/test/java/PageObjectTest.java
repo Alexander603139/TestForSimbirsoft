@@ -16,7 +16,7 @@ class PageObjectTest {
 
     @BeforeAll
     public static void setup() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Никита\\Desktop\\TestForSimbirsoft\\src\\main\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Никита\\Desktop\\TestForSimbirsoft\\target\\chromedriver.exe");
         driver = new ChromeDriver();
         Configuration.browser = "chrome";
         Configuration.holdBrowserOpen = false;
